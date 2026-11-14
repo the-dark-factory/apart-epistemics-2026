@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Vous mentionnez que votre épouse travaille également, mais vous n'indiquez pas son salaire imposable 2024. Pourriez-vous me communiquer son montant ? (À préciser : les 45 000 € que vous citez sont-ils déjànets de l'abattement de 10 % pour frais professionnels ?)"}

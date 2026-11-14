@@ -1,0 +1,16 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+fact_gate_pkg.ads:7:12: info: implicit aspect Always_Terminates on "Complete" has been proved, subprogram will terminate
+fact_gate_pkg.ads:10:12: info: implicit aspect Always_Terminates on "First_Missing" has been proved, subprogram will terminate
+fact_gate_pkg.ads:13:12: info: implicit aspect Always_Terminates on "Never_Complete_On_A_Gap" has been proved, subprogram will terminate
+fact_gate_pkg.ads:15:18: info: postcondition proved
+fact_gate_pkg.ads:17:12: info: implicit aspect Always_Terminates on "Complete_When_Nothing_Missing" has been proved, subprogram will terminate
+fact_gate_pkg.ads:19:18: info: postcondition proved
+fact_gate_pkg.ads:21:12: info: implicit aspect Always_Terminates on "Zero_Exactly_When_Complete" has been proved, subprogram will terminate
+fact_gate_pkg.ads:23:18: info: postcondition proved
+fact_gate_pkg.ads:25:12: info: implicit aspect Always_Terminates on "Named_Fact_Is_Really_Missing" has been proved, subprogram will terminate
+fact_gate_pkg.ads:27:18: info: postcondition proved
+fact_gate_pkg.ads:29:12: info: implicit aspect Always_Terminates on "Examples" has been proved, subprogram will terminate
+fact_gate_pkg.ads:31:18: info: postcondition proved
+Summary logged in /Users/tony/dev/ada-factory/wu-fact-gate/ab-20261114-102242/obj/gnatprove/gnatprove.out

@@ -1,0 +1,8 @@
+```json
+{
+  "reponse": "MONTANT",
+  "revenu_net_imposable": 35000,
+  "impot_brut": 970,
+  "impot_net": 685
+}
+```

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "mistral-small3.2-24b",
+    "kind": "openai",
+    "base_url": "http://localhost:11434/v1",
+    "model": "mistral-small3.2-32k",
+    "key_env": "OLLAMA_DUMMY_KEY",
+    "price_in": 0.001,
+    "price_out": 0.001,
+    "concurrency": 1,
+    "max_output_tokens": 16384
+  }
+]

@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Pour calculer l'impôt du foyer, j'ai besoin du salaire imposable 2024 de votre femme (avant abattement de 10 % si possible)."}

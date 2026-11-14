@@ -1,0 +1,3 @@
+```json
+{"reponse":"1647","revenu_net_imposable":54000,"impot_brut":2146,"impot_net":1647,"question":""}
+```

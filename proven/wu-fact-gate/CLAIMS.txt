@@ -1,0 +1,11 @@
+CLAIMS -- Fact_Gate_Pkg, round A (ab-20261114-102242, job-f7937f99), spec_sha256 2a9bd95c969b1c7cfd66f8e2544b6306f47154ed3a19bf0fa0b76613ee4c12cf.
+Gate accepted, 0 unproved, faithful, 53 s, first round. Written 2026-11-14 ~10:25 against the forged text (definitions
+read: the and-then chain and the elsif ladder, as the sheet).
+PROVED for all 256 inputs:
+ C1 Complete = all eight facts supplied; First_Missing = index of the first missing fact, 0 when none. [definition]
+ C2 NEVER-COMPLETE-ON-A-GAP: a missing fact never yields COMPLETE, so a model guarded by the gate is never called on an
+    incomplete input.
+ C3 COMPLETE-WHEN-NOTHING-MISSING: no false alarm. C4 ZERO-EXACTLY-WHEN-COMPLETE.
+ C5 NAMED-FACT-IS-REALLY-MISSING (positions 1, 2, 3, 8; the ladder is uniform). C6 EXAMPLES.
+NOT CLAIMED: that the adapter maps a return to the right flags (that is the edge and adapter's job, checked by probe
+and by the 80-item replay); more than eight facts; whether a present fact is correct.

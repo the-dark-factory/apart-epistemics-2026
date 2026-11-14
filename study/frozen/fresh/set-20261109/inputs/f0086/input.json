@@ -1,0 +1,557 @@
+{
+  "input": {
+    "return_header": {
+      "tp_signature_pin": {
+        "label": "Create a 5 digit PIN for yourself",
+        "value": "18533"
+      },
+      "tp_signature_date": {
+        "label": "Today's date",
+        "value": "2025-06-13"
+      },
+      "sp_signature_pin": {
+        "label": "Create a 5 digit PIN for your spouse",
+        "value": "98627"
+      },
+      "sp_signature_date": {
+        "value": "2025-06-13"
+      },
+      "tp_prior_year_agi": {
+        "label": "Your prior-year adjusted gross income",
+        "value": 8421
+      },
+      "sp_prior_year_agi": {
+        "label": "Your spouse's adjusted gross income from their 2023 return",
+        "value": 0
+      },
+      "tp_IPPIN": {
+        "label": "Your identity protection PIN",
+        "value": "181878"
+      },
+      "tp_received_ippin": {
+        "label": "Have you received an Identity Protection PIN from the IRS for this tax year?",
+        "value": true
+      },
+      "tp_ssn": {
+        "label": "Social Security Number",
+        "value": "900589584"
+      },
+      "sp_ssn": {
+        "label": "Spouse's Social Security Number",
+        "value": "900813838"
+      },
+      "address": {
+        "label": "Address",
+        "value": "3442 Margalqui Drive"
+      },
+      "city": {
+        "label": "City",
+        "value": "Banorkor"
+      },
+      "state": {
+        "label": "State",
+        "value": "NY"
+      },
+      "zip_code": {
+        "label": "ZIP code",
+        "value": "62301"
+      },
+      "additional_filer_information": {
+        "tp_id_type": {
+          "label": "ID type",
+          "value": "drivers_license"
+        },
+        "tp_provided_id": {
+          "value": "id_provided"
+        },
+        "tp_drivers_license_number": {
+          "label": "ID number",
+          "value": "501696855"
+        },
+        "tp_drivers_license_state": {
+          "label": "State",
+          "value": "NY"
+        },
+        "tp_drivers_license_expiration": {
+          "label": "Expiration date",
+          "value": "2027-01-01"
+        },
+        "tp_drivers_license_issue_date": {
+          "label": "Issue date",
+          "value": "2022-01-01"
+        },
+        "sp_id_type": {
+          "label": "ID type",
+          "value": "drivers_license"
+        },
+        "sp_provided_id": {
+          "value": "id_provided"
+        },
+        "sp_drivers_license_number": {
+          "label": "ID number",
+          "value": "424269602"
+        },
+        "sp_drivers_license_state": {
+          "label": "State",
+          "value": "NY"
+        },
+        "sp_drivers_license_issue_date": {
+          "label": "Issue date",
+          "value": "2023-07-10"
+        },
+        "sp_drivers_license_expiration": {
+          "label": "Expiration date",
+          "value": "2033-01-15"
+        }
+      }
+    },
+    "return_data": {
+      "depreciation": {
+        "label": "Did you purchase or sell any depreciable assets for your business?",
+        "value": false
+      },
+      "worked_and_lived_in_different_states": {
+        "label": "Lived in multiple states",
+        "value": false
+      },
+      "has_ssn": {
+        "label": "Do you have a Social Security Number?",
+        "value": true
+      },
+      "other_expenses": {
+        "value": false
+      },
+      "worked_in_multiple_states": {
+        "value": false
+      },
+      "earned_in_another_state": {
+        "label": "Earned income in a state you didn’t live in",
+        "value": false
+      },
+      "will_itemize": {
+        "value": false
+      },
+      "needs_to_file_extension": {
+        "value": false
+      },
+      "ca_foster_credit_eligible": {
+        "value": false
+      },
+      "irs8962": {
+        "received_1095a": {
+          "label": "Did you purchase health insurance through a state or federal marketplace?",
+          "value": false
+        },
+        "dependents_magi": {
+          "label": "Total dependent's MAGI",
+          "value": 0
+        },
+        "annual_premium": {
+          "label": "Box 33A",
+          "value": 0
+        },
+        "annual_premium_slcsp": {
+          "label": "Box 33B",
+          "value": 0
+        },
+        "annual_advanced_ptc": {
+          "label": "Box 33C",
+          "value": 0
+        }
+      },
+      "irs8995a_schedulec": {
+        "prior_yr_qbi_loss_carryforward": {
+          "label": "How much is your qualified business loss carryforward from prior tax years?",
+          "value": 0
+        }
+      },
+      "irs1040": {
+        "nonresident_alien": {
+          "label": "You or your spouse were considered a nonresident alien",
+          "value": false
+        },
+        "qualifying_child_of_another": {
+          "value": false
+        },
+        "main_home_not_us": {
+          "label": "Your main home was outside the USA for more than half the year",
+          "value": false
+        },
+        "has_medicaid_waiver_payment": {
+          "label": "Medicaid waiver payments",
+          "value": false
+        },
+        "medicaid_waiver_payment": {
+          "value": 0
+        },
+        "credit_denied_reduced": {
+          "label": "Were denied (or received reduced payment for) this credit in a previous tax year",
+          "value": false
+        },
+        "nontaxable_combat_election": {
+          "label": "Non-taxable combat pay",
+          "value": false
+        },
+        "eic_not_allowed": {
+          "label": "Received notice from the IRS that you can’t claim this credit",
+          "value": false
+        },
+        "charitable_contribution": {
+          "value": 0
+        },
+        "applied_from_prior_year": {
+          "label": "Amount of your prior year's federal tax refund applied to your 2024 federal tax return.",
+          "value": 0
+        },
+        "paid_estimated_tax_pmts": {
+          "label": "Paid estimated tax payments for this tax year",
+          "value": true
+        },
+        "estimated_tax_payment_1": {
+          "label": "Quarter 1",
+          "value": 857
+        },
+        "estimated_tax_payment_2": {
+          "label": "Quarter 2",
+          "value": 2922
+        },
+        "estimated_tax_payment_3": {
+          "label": "Quarter 3",
+          "value": 822
+        },
+        "estimated_tax_payment_4": {
+          "label": "Quarter 4",
+          "value": 2833
+        },
+        "filing_status": {
+          "label": "Confirm your filing status for 2024",
+          "value": "married_jointly"
+        },
+        "tp_first_name": {
+          "label": "First name",
+          "value": "Marmor"
+        },
+        "tp_last_name": {
+          "label": "Last name",
+          "value": "Quinormi"
+        },
+        "tp_date_of_birth": {
+          "label": "Date of birth",
+          "value": "1974-10-07"
+        },
+        "virtual_currency": {
+          "value": false
+        },
+        "tp_dependent": {
+          "label": "Could you be claimed as a dependent on someone else's tax return?",
+          "value": false
+        },
+        "tp_blind": {
+          "label": "Are you legally blind?",
+          "value": false
+        },
+        "tp_student": {
+          "label": "Were you a full-time student in 2024?",
+          "value": false
+        },
+        "sp_first_name": {
+          "label": "Spouse's first name",
+          "value": "Kelun"
+        },
+        "sp_last_name": {
+          "label": "Spouse's last name",
+          "value": "Quinormi"
+        },
+        "sp_date_of_birth": {
+          "label": "Spouse's date of birth",
+          "value": "1973-03-15"
+        },
+        "sp_dependent": {
+          "label": "Could your spouse be claimed as a dependent on someone else's tax return?",
+          "value": false
+        },
+        "sp_blind": {
+          "label": "Is your spouse legally blind?",
+          "value": false
+        },
+        "sp_student": {
+          "label": "Was your spouse a full-time student for five months or more during 2024?",
+          "value": false
+        },
+        "refund_method": {
+          "value": "direct_deposit"
+        },
+        "routing_number": {
+          "label": "Routing number",
+          "value": "407919498"
+        },
+        "account_number": {
+          "label": "Account number",
+          "value": "216048193"
+        },
+        "bank_account_type": {
+          "label": "Account type",
+          "value": "checking"
+        },
+        "tp_elects_to_claim_dependent_credit": {
+          "value": true
+        },
+        "hoh_planning_to_claim_child_or_dependent_credit": {
+          "label": "Will you be claiming your qualifying person as a dependent as well?",
+          "value": true
+        }
+      },
+      "irs_payment": {
+        "direct_debit_indicator": {
+          "value": false
+        }
+      },
+      "irs1040_schedule1": {
+        "student_interest": {
+          "label": "Your student loan interest paid",
+          "value": 0
+        },
+        "paid_student_loan_interest": {
+          "label": "Paid interest on student loans",
+          "value": false
+        },
+        "qualified_educator": {
+          "label": "Were a K-12 educator and paid for your own work supplies",
+          "value": false
+        },
+        "tp_educator_exp_amount": {
+          "label": "Your unreimbursed educator expenses for 2024",
+          "value": 0
+        },
+        "sp_educator_exp_amount": {
+          "label": "Your spouse’s unreimbursed educator expenses for 2024",
+          "value": 0
+        },
+        "irs1099_g": [
+          {
+            "g_payer_name": {
+              "label": "Payer’s name",
+              "value": "Kessilra Mormipel Co"
+            },
+            "g_payer_tin": {
+              "label": "Payer’s federal ID no.",
+              "value": "640267553"
+            },
+            "g_who_applies_to": {
+              "label": "Whose 1099-G is this?",
+              "value": "spouse"
+            },
+            "g_unemployment_comp": {
+              "label": "Box 1",
+              "value": 8565
+            },
+            "g_fed_wh": {
+              "label": "Box 4",
+              "value": 0
+            },
+            "g_amount_repaid_current_year": {
+              "label": "Benefits repaid in 2024",
+              "value": 0
+            },
+            "g_amount_repaid_prior_years": {
+              "label": "Benefits repaid in prior years",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "irs1040_schedule3": {
+        "extension_payment": {
+          "label": "How much did you pay along with your extension of time to file?",
+          "value": 0
+        }
+      },
+      "w2": [
+        {
+          "who_applies_to": {
+            "label": "Whose W-2 is this?",
+            "value": "taxpayer"
+          },
+          "ein": {
+            "label": "Employer identification number (EIN)",
+            "value": "410513093"
+          },
+          "employer_name": {
+            "label": "Employer’s name",
+            "value": "Brimardel Mardelhav Group"
+          },
+          "employer_street_address": {
+            "label": "Employer's address",
+            "value": "6857 Korfen Drive"
+          },
+          "employer_city": {
+            "label": "Employer's city",
+            "value": "Kespranor"
+          },
+          "employer_state": {
+            "label": "Employer's state",
+            "value": "AK"
+          },
+          "employer_zip": {
+            "label": "Employer's ZIP code",
+            "value": "22880"
+          },
+          "wages": {
+            "label": "Box 1",
+            "value": 8421
+          },
+          "withholding": {
+            "label": "Box 2",
+            "value": 926
+          },
+          "social_security_wages": {
+            "label": "Box 3",
+            "value": 8421
+          },
+          "social_security_tax": {
+            "label": "Box 4",
+            "value": 522
+          },
+          "medicare_wages_and_tips": {
+            "label": "Box 5",
+            "value": 8421
+          },
+          "medicare_tax_withheld": {
+            "label": "Box 6",
+            "value": 122
+          },
+          "social_security_tips": {
+            "label": "Box 7",
+            "value": 0
+          },
+          "allocated_tips": {
+            "label": "Box 8",
+            "value": 0
+          },
+          "dependent_care_benefits": {
+            "label": "Box 10",
+            "value": 0
+          },
+          "nonqualified_plan": {
+            "label": "Box 11",
+            "value": 0
+          },
+          "statutory_employee": {
+            "label": "Statutory",
+            "value": false
+          },
+          "retirement_plan": {
+            "label": "Retirement plan",
+            "value": false
+          },
+          "third_party_sick_pay": {
+            "label": "Third-party sick pay",
+            "value": false
+          },
+          "w2_state_local_tax_grp": [
+            {
+              "state": {
+                "label": "State",
+                "value": "AK"
+              },
+              "employer_state_id": {
+                "label": "Employer's state ID Number",
+                "value": "79-8486761324"
+              },
+              "state_wages": {
+                "label": "State wages, tips, etc.",
+                "value": 8421
+              },
+              "state_income_tax": {
+                "label": "State income tax",
+                "value": 22
+              },
+              "local_wages": {
+                "label": "Local wages, tips, etc",
+                "value": 500
+              },
+              "local_income_tax": {
+                "label": "Local income tax",
+                "value": 15
+              }
+            }
+          ]
+        }
+      ],
+      "irs1040_scheduleb": {
+        "foreign_accounts_input": {
+          "label": "At any point in the year, did you have any financial accounts outside the U.S.?",
+          "value": false
+        },
+        "foreign_trust_input": {
+          "label": "In 2024, did you receive a distribution from, were the grantor of, or transferor to a foreign trust?",
+          "value": false
+        },
+        "irs1099_int": [
+          {
+            "interest_1099int_payer": {
+              "label": "Payer’s name",
+              "value": "Nahav Wensupel Co"
+            },
+            "interest_1099int_interest": {
+              "label": "Box 1",
+              "value": 809
+            },
+            "interest_1099int_early_withdrawal": {
+              "label": "Box 2",
+              "value": 0
+            },
+            "interest_1099int_us_saving_bond_treasury_obligations": {
+              "label": "Box 3",
+              "value": 0
+            },
+            "interest_1099int_fed_inc_tax_withheld": {
+              "label": "Box 4",
+              "value": 521
+            },
+            "interest_1099int_payer_ein": {
+              "label": "Payer’s TIN",
+              "value": "472919928"
+            },
+            "interest_1099int_investment_expenses": {
+              "label": "Box 5",
+              "value": 0
+            },
+            "interest_1099int_foreign_taxes_paid": {
+              "label": "Box 6",
+              "value": 0
+            },
+            "interest_1099int_tax_exempt": {
+              "label": "Box 8",
+              "value": 0
+            },
+            "interest_1099int_specified_private_act_bond": {
+              "label": "Box 9",
+              "value": 0
+            },
+            "interest_1099int_market_discount": {
+              "label": "Box 10",
+              "value": 0
+            },
+            "interest_1099int_bond_premium": {
+              "label": "Box 11",
+              "value": 0
+            },
+            "interest_1099int_bond_premium_treasury_obligations": {
+              "label": "Box 12",
+              "value": 0
+            },
+            "interest_1099int_bond_premium_tax_exempt": {
+              "label": "Box 13",
+              "value": 0
+            },
+            "interest_1099int_who_applies_to": {
+              "label": "Whose 1099-INT is this?",
+              "value": "spouse"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

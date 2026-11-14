@@ -1,0 +1,1 @@
+{"reponse":"1213€","revenu_net_imposable":48000,"impot_brut":2751,"impot_net":1213,"question":""}

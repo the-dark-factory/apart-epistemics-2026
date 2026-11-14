@@ -1,0 +1,7 @@
+{
+  "reponse": "MONTANT",
+  "revenu_net_imposable": 20800,
+  "impot_brut": 1046,
+  "impot_net": 0,
+  "question": ""
+}

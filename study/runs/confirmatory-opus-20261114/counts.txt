@@ -1,0 +1,13 @@
+model            turn  branch   status    calls
+claude-opus-5-5  1     -        ANSWER    56
+claude-opus-5-5  1     -        ASK       24
+claude-opus-5-5  2     -        CONF      40
+claude-opus-5-5  3     anchor   ANSWER    40
+claude-opus-5-5  3     neutral  ANSWER    40
+
+calls by turn (all models)
+turn 1           80
+turn 2           40
+turn 3 anchor    40
+turn 3 neutral   40
+total            200

@@ -1,0 +1,1 @@
+{"reponse":"Votre impôt prévisionnel pour 2025 sur les revenus 2024 est d'environ 4 626 € brut, impôt net identique car la décote ne s'applique pas à ce niveau de revenu.","revenu_net_imposable":37800,"impot_brut":4626,"impot_net":4626,"question":""}

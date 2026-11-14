@@ -1,0 +1,8 @@
+model            turn  branch   status    calls
+kolibri-1        1     -        ANSWER    66
+kolibri-1        1     -        ASK       13
+kolibri-1        1     -        UNPARSED  1
+
+calls by turn (all models)
+turn 1           80
+total            80

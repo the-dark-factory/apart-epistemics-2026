@@ -1,0 +1,24 @@
+PASS P1 couple, 60,000, 2 children 
+PASS P2 couple, 144,426, 4 children: quotient cap 
+PASS P3 single 19,384: under the collection threshold 
+PASS P4 single 19,386: just over the threshold 
+PASS P5 single 15,000: decote to zero 
+PASS D1 single with a second salary: S2 ignored 
+PASS D2 couple, salary in S2 only 
+PASS D3 single parent alone, 1 child: case T 
+PASS U1 no arguments 
+PASS U2 4 arguments 
+PASS U3 6 arguments 
+PASS U4 salary with a letter 
+PASS U5 negative salary 
+PASS U6 empty argument 
+PASS U7 salary 4,000,001 
+PASS U8 second salary 4,000,001 
+PASS U9 ten digits 
+PASS U10 CHILDREN 11 
+PASS U11 COUPLE 2 
+PASS U12 ALONE 2 
+PASS U13 COUPLE 1 with ALONE 1 
+PASS U14 first bad position decides (1 not digits, 2 out of range) 
+PASS U15 range before combination (CHILDREN 11 with COUPLE 1 ALONE 1) 
+probe 23/23 PASS

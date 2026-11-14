@@ -1,0 +1,10 @@
+CLAIMS -- Fr_Abattement_2025_Pkg, round A (ab-20261114-071412), spec_sha256 56fd772b8eba9dbeaa94043ec54d502f22ef5d967e3ad4be9385293bdfc4399f.
+Written 2026-11-14 ~07:20 by the seat against the FORGED text (definitions read; 7 Posts, 7 "postcondition proved").
+Gate accepted, 0 unproved, faithful, 40 s.
+PROVED for every salary S 0 .. 10**7 EUR, in tenths of a euro:
+ C1 Deduction = min(10 S, max(5 040, min(144 260, S))): 10 %, minimum 504 EUR, maximum 14 426 EUR (BOFiP
+    BOI-BAREME-000035-20250414), never above the salary (CGI art. 83 3; BOI-RSA-BASE-30-50-20 par. 90). [definition]
+ C2 BETWEEN-ZERO-AND-SALARY. C3 TEN-PERCENT-INSIDE-LIMITS. C4 MINIMUM-APPLIES. C5 SMALL-SALARY-FULLY-DEDUCTED.
+ C6 MAXIMUM-APPLIES. C7 NET-MONOTONE. C8 OFFICIAL-EXAMPLES incl. the BOFiP par. 100 example (300 EUR salary -> 300).
+NOT CLAIMED: rounding; per-household summing (the composition applies it per person); the "frais reels" option; the
+2023 or 2025-income limits; income other than salaries.

@@ -1,0 +1,16 @@
+CLAIMS -- Fr_Quotient_2025_Pkg, round ab-20261114-072509 (job-f5cf6e2f), spec_sha256 e5d4e8f650c309ac50214c34c313cb63970722e9247aa34d88a1d611f07b1cb2.
+Written 2026-11-14 ~07:27 by the seat against the FORGED text. Gate accepted, 0 unproved, faithful, 65 s. Third round:
+the two earlier rounds were refused at compile for a SHEET error (carried types' operators not visible; fixed with two
+use type lines). Carries Fr_Bareme_2025_Pkg (DF 1825), byte-identical to its admission.
+PROVED for every R 0 .. 10**7, C 0 .. 10 children, Couple, Alone (case T):
+ C1 parts in half-parts (2 / 4; children +1 +1 then +2; case T +1) and the cap (358 200 hc = 1 791 EUR per extra
+    half-part; case T first two together 844 800 hc = 4 224 EUR), CGI art. 194, 195, 197 2 (LEGIARTI000051212954).
+    [definition; independent read]
+ C2 NEVER-BELOW-UNCAPPED. C3 SAVING-WITHIN-CAP -- NOTE: true by the shape of Higher alone; it says nothing about the
+    scale. C4 NEVER-ABOVE-BASE-TAX: children and case T never raise the tax above the base-parts tax (the prover
+    re-derived the scale's fall in H). C5 NEVER-NEGATIVE. C6 PARTS-COUNTED.
+ C7 OFFICIAL-EXAMPLES: BOFiP BOI-IR-LIQ-20-20-20 couple + 4 children, 130 000 EUR -> 14 584.96 (BOFiP 14 585, capped);
+    brochure couple + 2, 54 000 -> 2 145.99 (2 146, not capped); case T + 1 child at 80 000 (cap binds, 12 941.48)
+    and 40 000 (not, 1 870.66) [seat-computed, not official].
+NOT CLAIMED: quarter-parts (shared custody), case L, invalidity, widow(er) parts, the 5,5-part BOFiP variant (needs an
+invalidity half-part), the décote, rounding.

@@ -1,0 +1,1 @@
+{'question': 'Quel est le montant du salaire imposable de votre mari pour l\'année 2024 ?'}

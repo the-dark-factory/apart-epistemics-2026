@@ -1,0 +1,16 @@
+CLAIMS -- Fr_Ir_2025_Pkg, round B in ab-20261114-073505 (job-c4137b61), gate accepted, 0 unproved, faithful, 60 s, at
+prove-timeout 120 / 100 000 (= admitter caps). Round A at level 2 left only Official_Examples at medium. Written
+2026-11-14 ~07:47 by the seat against the forged text (definitions read; it follows the sheet).
+Carries DF 1825-1829, byte-identical to their admissions.
+PROVED for every pair of salaries 0 .. 4 000 000 EUR, Couple, C 0 .. 10 children, Alone:
+ C1 the official order (brochure IR 2025, form 2041 FDC): 10 % deduction per salary -> sum rounded half up to the euro
+    -> scale per part with the quotient cap -> rounded to the euro (impot brut) -> decote -> not collected below
+    61 EUR, tested on the unrounded amount -> rounded half up. [definition; independent read]
+ C2 NET-NEVER-MORE-THAN-BRUT. C3 SINGLE-IGNORES-SECOND-SALARY.
+ C4 OFFICIAL-EXAMPLES, end to end from salaries: brochure p.361 impot brut 2 146 (couple + 2, 54 000 net taxable)
+    then 1 647 after the decote [seat-computed]; BOFiP 14 585 (couple + 4, 130 000, capped); the brochure's table 7
+    collection limit for one part, 17 447 EUR (17 446 -> 0, 17 447 -> 62); a low single income -> 0.
+ C5 THE 61 EUR FINDING: the brochure's 17 447 limit is reproduced only if the 61 EUR test is applied BEFORE the final
+    rounding (60.935 EUR is not collected).
+NOT CLAIMED: monotone in salary; income other than salaries; tax at source; CSG/CRDS; reductions and credits; quarter
+parts; case L; invalidity; CEHR; a cross-check against the impots.gouv simulator (owed: mui fr-ir2025-crosscheck).

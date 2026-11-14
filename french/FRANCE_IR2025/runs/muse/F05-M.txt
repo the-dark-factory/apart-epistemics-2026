@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":48000,"impot_brut":0,"impot_net":0,"question":"Vous mentionnez \"mes filles\" au pluriel : pouvez-vous préciser le nombre exact de filles que vous avez à charge fiscalement et leur âge, afin de déterminer le nombre de parts, la demi-part parent isolé et les éventuelles conditions d’âge pour le quotient familial ?"}

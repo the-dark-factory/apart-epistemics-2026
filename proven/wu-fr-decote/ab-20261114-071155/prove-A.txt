@@ -1,0 +1,18 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+fr_decote_2025_pkg.ads:9:12: info: implicit aspect Always_Terminates on "Clip" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:12:12: info: implicit aspect Always_Terminates on "Decote" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:15:12: info: implicit aspect Always_Terminates on "After_Decote" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:16:30: info: range check proved
+fr_decote_2025_pkg.ads:18:12: info: implicit aspect Always_Terminates on "Between_Zero_And_Tax" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:20:20: info: postcondition proved
+fr_decote_2025_pkg.ads:22:12: info: implicit aspect Always_Terminates on "No_Decote_At_Or_Above_Threshold" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:24:20: info: postcondition proved
+fr_decote_2025_pkg.ads:26:12: info: implicit aspect Always_Terminates on "Monotone_In_Tax" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:28:20: info: postcondition proved
+fr_decote_2025_pkg.ads:30:12: info: implicit aspect Always_Terminates on "Couple_Never_Pays_More" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:32:20: info: postcondition proved
+fr_decote_2025_pkg.ads:34:12: info: implicit aspect Always_Terminates on "Official_Examples" has been proved, subprogram will terminate
+fr_decote_2025_pkg.ads:36:20: info: postcondition proved
+Summary logged in /Users/tony/dev/ada-factory/wu-fr-decote/ab-20261114-071155/obj/gnatprove/gnatprove.out

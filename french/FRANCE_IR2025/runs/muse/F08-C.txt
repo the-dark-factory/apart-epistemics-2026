@@ -1,0 +1,1 @@
+{"reponse":"MONTANT","revenu_net_imposable":60000,"impot_brut":2873,"impot_net":2873,"question":""}

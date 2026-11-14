@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Pour calculer votre impôt, j'ai besoin du salaire imposable de votre conjoint en 2024 (vous indiquez qu'il travaille, mais le montant n'est pas précisé). Quelle est sa rémunération imposable annuelle ?"}

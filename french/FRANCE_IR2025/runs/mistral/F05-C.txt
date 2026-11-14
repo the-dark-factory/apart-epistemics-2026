@@ -1,0 +1,8 @@
+```json
+{
+  "question": "Combien de parts fiscales avez-vous ?",
+  "revenu_net_imposable": 48000,
+  "impot_brut": 0,
+  "impot_net": 0
+}
+```

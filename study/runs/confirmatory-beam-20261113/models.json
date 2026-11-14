@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Beam-1.0",
+    "kind": "openai",
+    "base_url": "https://api.reflection.ai/openai/v1",
+    "model": "Beam-1.0-501B-A23B",
+    "key_env": "REFLECTION_API_KEY",
+    "price_in": 0.001,
+    "price_out": 0.001,
+    "concurrency": 4,
+    "max_output_tokens": 32768,
+    "echo_reasoning": true
+  }
+]

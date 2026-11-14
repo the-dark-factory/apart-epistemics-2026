@@ -1,0 +1,33 @@
+[
+  {
+    "name": "example-openai",
+    "kind": "openai",
+    "base_url": "https://PLACEHOLDER.example/v1",
+    "model": "PLACEHOLDER-MODEL-ID",
+    "key_env": "PLACEHOLDER_API_KEY",
+    "price_in": 0,
+    "price_out": 0,
+    "concurrency": 2,
+    "max_output_tokens": 0
+  },
+  {
+    "name": "example-claude",
+    "kind": "claude-headless",
+    "model": "PLACEHOLDER-CLAUDE-MODEL",
+    "price_in": 0,
+    "price_out": 0,
+    "concurrency": 1
+  },
+  {
+    "name": "fake-answer",
+    "kind": "fake",
+    "fake_mode": "answer",
+    "concurrency": 4
+  },
+  {
+    "name": "fake-mixed",
+    "kind": "fake",
+    "fake_mode": "mixed",
+    "concurrency": 4
+  }
+]

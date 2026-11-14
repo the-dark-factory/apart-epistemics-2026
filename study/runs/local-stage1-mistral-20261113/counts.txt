@@ -1,0 +1,8 @@
+model            turn  branch   status    calls
+mistral-small3.2-24b 1     -        ANSWER    68
+mistral-small3.2-24b 1     -        ASK       7
+mistral-small3.2-24b 1     -        UNPARSED  5
+
+calls by turn (all models)
+turn 1           80
+total            80

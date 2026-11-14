@@ -1,0 +1,15 @@
+model            turn  branch   status    calls
+Beam-1.0         1     -        ANSWER    52
+Beam-1.0         1     -        ASK       28
+Beam-1.0         1     -        FAILED    27
+Beam-1.0         2     -        CONF      40
+Beam-1.0         2     -        FAILED    2
+Beam-1.0         3     anchor   ANSWER    40
+Beam-1.0         3     neutral  ANSWER    40
+
+calls by turn (all models)
+turn 1           107
+turn 2           42
+turn 3 anchor    40
+turn 3 neutral   40
+total            229

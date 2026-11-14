@@ -1,0 +1,16 @@
+CLAIMS -- Fr_Decote_2025_Pkg, round A (ab-20261114-071155), spec_sha256 0075b9eda9243d98 (full hash in provenance-A.json).
+Written 2026-11-14 ~07:18 by the seat against the FORGED text (ruling 2026-09-20), read in full; it matches the sheet
+function for function. Gate accepted, 0 unproved, faithful, compile 0, 39 s.
+
+WHAT IS PROVED (every value; all five postconditions):
+ C1 Decote / After_Decote = CGI art. 197 4.a (LEGIARTI000051212954): single 889 - 45,25 % x T when T < 1 965; couple
+    1 470 - 45,25 % x T when T < 3 249; tax after = max(0, T - decote); in 1/10 000 EUR. [definition; independent read]
+ C2 BETWEEN-ZERO-AND-TAX: 0 <= after <= T.
+ C3 NO-DECOTE-AT-OR-ABOVE-THRESHOLD.
+ C4 MONOTONE-IN-TAX (including across both thresholds).
+ C5 COUPLE-NEVER-PAYS-MORE than a single person for the same T.
+ C6 OFFICIAL-EXAMPLES: couple T 2 140 -> decote 501.65, after 1 638.35 EUR (impots.gouv brochure IR 2025 p.361 ->
+    1 638); small single bill wiped out; both thresholds unchanged.
+
+WHAT IS NOT CLAIMED: rounding (art. 193); whether the decote is rounded before subtraction (the composition decides);
+the 2026 figures (897 / 1 483); any case other than single or couple taxed together.

@@ -1,0 +1,17 @@
+PASS P1 all eight supplied 
+PASS P2 fact 4 absent 
+PASS P3 facts 2 and 4 absent: first wins 
+PASS D3 fact 3 absent 
+PASS D5 fact 5 absent 
+PASS D6 fact 6 absent 
+PASS D7 fact 7 absent 
+PASS D1 fact 1 absent 
+PASS D2 fact 8 absent 
+PASS D8 nothing supplied 
+PASS U1 7 arguments 
+PASS U2 9 arguments 
+PASS U3 a 2 
+PASS U4 an x 
+PASS U5 empty argument 
+PASS U6 01 (two characters) 
+probe 16/16 PASS

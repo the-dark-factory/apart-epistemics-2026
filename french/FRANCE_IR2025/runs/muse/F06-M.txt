@@ -1,0 +1,2 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Pouvez-vous indiquer le salaire imposable 2024 de votre mari afin de déterminer le revenu net imposable total du foyer ?"}
+

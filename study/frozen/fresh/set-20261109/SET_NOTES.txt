@@ -1,0 +1,19 @@
+FRESH SET set-20261109 -- the corrected key for the Epistemics study (2026-11-09 ~07:5x; Tony 07:46 "Yes, carry on", after 07:44 "Yes, regenerate keys").
+Replaces set-20261106 for study use. That set is kept, unchanged, as the record. Do not use its key: strict scoring would mark a right answer wrong on 10 returns.
+
+INPUTS: byte-identical to set-20261106/inputs, less f0002 and f0049 (the two copies of the disputed single-eic-non-dependent-child pattern; see
+ObVault designs/PROPOSAL_us1040_25c_and_eic_case_2026-11-09.md). IDs were NOT renumbered, so f0002 and f0049 are simply absent.
+KEY: made by `us1040 run inputs <ada-factory/wu-us1040-edge-2/us1040_main> key` (edge job-d74a83bb over ADMITTED DF 1755, 1764, 1757).
+Hashes: edge f03c258e..87db, converter f3a22c19..5f21 (the same binaries as runs/us1040-rerun-20261109/FREEZE.txt).
+Hash of the sorted `shasum -a 256 key/*` listing: c3b59061e59a624823c447a6aed6861ae4c2bf12f6f524aa9cadf2acb7990795.
+
+MODELS UNDER TEST SEE ONLY inputs/<id>/input.json. NEVER key/, MANIFEST.tsv (it names kinds and strata), this file, the engine or the repo.
+
+COUNTS: 148 returns = 48 NEAR + 100 SYNTH. KEY: 142 computed (46 NEAR, 96 SYNTH) + 6 refused by the ENGINE (f0025, f0032, f0059, f0064 AMT; f0057, f0103 SAVERS_CREDIT).
+
+COMPARED WITH set-20261106 (every return): 138 of the 148 keys are byte-identical, all 6 refusals included. 10 differ, each by exactly $1, and only through line 25d and
+the lines that follow it (33, then 34 and 35a, or 37): f0035, f0067, f0070, f0081, f0097, f0120, f0121, f0133, f0142, f0146. This is the old 25c rounding residual removed.
+
+THE NEW FLAG: argument 59 is N on all 148 returns. No return in this set has a W-2 with box 5 over 200,000, so the flag-Y path is tested by the probe and unit tests, not here.
+AUDIT 2026-11-09: 20 sampled SYNTH returns re-derived from IRS text by two Sonnet subagents, 20 of 20 agree (ObVault findings/AUDIT_fresh_keys_2026-11-09.md; files in audit/). No second tax program is installed. The other 122 keys are the engine's answer, unaudited.
+KNOWN GENERATOR LIMITS and the joint CTC scope finding: as in set-20261106/SET_NOTES.txt.

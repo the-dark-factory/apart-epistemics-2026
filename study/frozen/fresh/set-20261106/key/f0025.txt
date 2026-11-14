@@ -1,0 +1,2 @@
+REFUSED: AMT
+No return was computed for this case; no Form 1040 amounts are given.

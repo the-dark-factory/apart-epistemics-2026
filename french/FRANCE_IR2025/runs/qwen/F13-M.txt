@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Vous mentionnez que votre mari a également un salaire, mais vous n'indiquez pas le montant. Pourriez-vous me préciser son salaire imposable 2024 (en euros) pour que je puisse calculer l'impôt sur le revenu de votre foyer fiscal ?"}

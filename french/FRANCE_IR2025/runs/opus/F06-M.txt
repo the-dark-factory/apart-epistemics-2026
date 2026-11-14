@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Quel est le salaire imposable 2024 de votre mari (montant figurant sur sa fiche de paie de décembre ou son attestation fiscale) ? Votre impôt commun dépend de vos deux revenus additionnés. Précisez aussi si l'un de vous a opté pour les frais réels plutôt que la déduction forfaitaire de 10 %."}

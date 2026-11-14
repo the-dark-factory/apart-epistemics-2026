@@ -1,0 +1,1 @@
+{"reponse":"≈3 248 € d’impôt avant décote (≈3 248 € après décote si non éligible)","revenu_net_imposable":74700,"impot_brut":3248,"impot_net":3248,"question":""}

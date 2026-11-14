@@ -1,0 +1,446 @@
+{
+  "input": {
+    "return_header": {
+      "tp_ssn": {
+        "label": "Social Security Number",
+        "value": "900535592"
+      },
+      "address": {
+        "label": "Address",
+        "value": "3346 Jintiba Court"
+      },
+      "city": {
+        "label": "City",
+        "value": "Zellun"
+      },
+      "state": {
+        "label": "State",
+        "value": "AK"
+      },
+      "zip_code": {
+        "label": "ZIP code",
+        "value": "67619"
+      },
+      "sp_ssn": {
+        "label": "Spouse's Social Security Number",
+        "value": "900791894"
+      },
+      "tp_received_ippin": {
+        "label": "Have you received an Identity Protection PIN from the IRS for this tax year?",
+        "value": false
+      },
+      "sp_received_ippin": {
+        "label": "Has your spouse received an Identity Protection PIN from the IRS?",
+        "value": false
+      },
+      "tp_signature_pin": {
+        "label": "Create a 5 digit PIN for yourself",
+        "value": "67302"
+      },
+      "sp_signature_pin": {
+        "label": "Create a 5 digit PIN for your spouse",
+        "value": "86142"
+      },
+      "tp_signature_date": {
+        "label": "Today's date",
+        "value": "2025-01-01"
+      },
+      "sp_signature_date": {
+        "value": "2025-01-01"
+      },
+      "tp_prior_year_agi": {
+        "label": "Your prior-year adjusted gross income",
+        "value": 0
+      },
+      "sp_prior_year_agi": {
+        "label": "Your spouse's adjusted gross income from their 2023 return",
+        "value": 0
+      }
+    },
+    "return_data": {
+      "has_ssn": {
+        "label": "Do you have a Social Security Number?",
+        "value": true
+      },
+      "worked_and_lived_in_different_states": {
+        "label": "Lived in multiple states",
+        "value": false
+      },
+      "earned_in_another_state": {
+        "label": "Earned income in a state you didn’t live in",
+        "value": false
+      },
+      "irs8962": {
+        "received_1095a": {
+          "label": "Did you purchase health insurance through a state or federal marketplace?",
+          "value": false
+        }
+      },
+      "irs1040": {
+        "nonresident_alien": {
+          "label": "You or your spouse were considered a nonresident alien",
+          "value": false
+        },
+        "qualifying_child_of_another": {
+          "value": false
+        },
+        "main_home_not_us": {
+          "label": "Your main home was outside the USA for more than half the year",
+          "value": false
+        },
+        "credit_denied_reduced": {
+          "label": "Were denied (or received reduced payment for) this credit in a previous tax year",
+          "value": false
+        },
+        "eic_not_allowed": {
+          "label": "Received notice from the IRS that you can’t claim this credit",
+          "value": false
+        },
+        "paid_estimated_tax_pmts": {
+          "label": "Paid estimated tax payments for this tax year",
+          "value": false
+        },
+        "filing_status": {
+          "label": "Confirm your filing status for 2024",
+          "value": "married_jointly"
+        },
+        "tp_first_name": {
+          "label": "First name",
+          "value": "Bapra"
+        },
+        "tp_last_name": {
+          "label": "Last name",
+          "value": "Rasu"
+        },
+        "tp_date_of_birth": {
+          "label": "Date of birth",
+          "value": "2000-07-23"
+        },
+        "virtual_currency": {
+          "value": false
+        },
+        "tp_dependent": {
+          "label": "Could you be claimed as a dependent on someone else's tax return?",
+          "value": false
+        },
+        "tp_blind": {
+          "label": "Are you legally blind?",
+          "value": false
+        },
+        "tp_student": {
+          "label": "Were you a full-time student in 2024?",
+          "value": false
+        },
+        "sp_first_name": {
+          "label": "Spouse's first name",
+          "value": "Galba"
+        },
+        "sp_last_name": {
+          "label": "Spouse's last name",
+          "value": "Rasu"
+        },
+        "sp_date_of_birth": {
+          "label": "Spouse's date of birth",
+          "value": "1990-12-22"
+        },
+        "sp_dependent": {
+          "label": "Could your spouse be claimed as a dependent on someone else's tax return?",
+          "value": false
+        },
+        "sp_blind": {
+          "label": "Is your spouse legally blind?",
+          "value": false
+        },
+        "sp_student": {
+          "label": "Was your spouse a full-time student for five months or more during 2024?",
+          "value": false
+        },
+        "tp_elects_to_claim_dependent_credit": {
+          "value": true
+        }
+      },
+      "irs1040_schedule1": {
+        "paid_student_loan_interest": {
+          "label": "Paid interest on student loans",
+          "value": false
+        },
+        "qualified_educator": {
+          "label": "Were a K-12 educator and paid for your own work supplies",
+          "value": false
+        }
+      },
+      "irs1040_schedule3": {
+        "requested_extension": {
+          "label": "Did you file an extension of time to file your taxes?",
+          "value": false
+        }
+      },
+      "w2": [
+        {
+          "who_applies_to": {
+            "label": "Whose W-2 is this?",
+            "value": "taxpayer"
+          },
+          "ein": {
+            "label": "Employer identification number (EIN)",
+            "value": "995811177"
+          },
+          "employer_name": {
+            "label": "Employer’s name",
+            "value": "Midrana Lunhavvo Inc"
+          },
+          "employer_street_address": {
+            "label": "Employer's address",
+            "value": "751 Nawen Street"
+          },
+          "employer_city": {
+            "label": "Employer's city",
+            "value": "Kevosar"
+          },
+          "employer_state": {
+            "label": "Employer's state",
+            "value": "AK"
+          },
+          "employer_zip": {
+            "label": "Employer's ZIP code",
+            "value": "52271"
+          },
+          "wages": {
+            "label": "Box 1",
+            "value": 82584
+          },
+          "withholding": {
+            "label": "Box 2",
+            "value": 10297
+          },
+          "social_security_wages": {
+            "label": "Box 3",
+            "value": 82584
+          },
+          "social_security_tax": {
+            "label": "Box 4",
+            "value": 5122
+          },
+          "medicare_wages_and_tips": {
+            "label": "Box 5",
+            "value": 82584
+          },
+          "medicare_tax_withheld": {
+            "label": "Box 6",
+            "value": 1198
+          },
+          "statutory_employee": {
+            "label": "Statutory",
+            "value": false
+          },
+          "retirement_plan": {
+            "label": "Retirement plan",
+            "value": false
+          },
+          "third_party_sick_pay": {
+            "label": "Third-party sick pay",
+            "value": false
+          }
+        },
+        {
+          "who_applies_to": {
+            "label": "Whose W-2 is this?",
+            "value": "taxpayer"
+          },
+          "ein": {
+            "label": "Employer identification number (EIN)",
+            "value": "635268502"
+          },
+          "employer_name": {
+            "label": "Employer’s name",
+            "value": "Midrana Lunhavvo Inc"
+          },
+          "employer_street_address": {
+            "label": "Employer's address",
+            "value": "7039 Ratovnor Road"
+          },
+          "employer_city": {
+            "label": "Employer's city",
+            "value": "Galnorti"
+          },
+          "employer_state": {
+            "label": "Employer's state",
+            "value": "AK"
+          },
+          "employer_zip": {
+            "label": "Employer's ZIP code",
+            "value": "66310"
+          },
+          "wages": {
+            "label": "Box 1",
+            "value": 87220
+          },
+          "withholding": {
+            "label": "Box 2",
+            "value": 19733
+          },
+          "social_security_wages": {
+            "label": "Box 3",
+            "value": 87220
+          },
+          "social_security_tax": {
+            "label": "Box 4",
+            "value": 5408
+          },
+          "medicare_wages_and_tips": {
+            "label": "Box 5",
+            "value": 87220
+          },
+          "medicare_tax_withheld": {
+            "label": "Box 6",
+            "value": 1265
+          },
+          "statutory_employee": {
+            "label": "Statutory",
+            "value": false
+          },
+          "retirement_plan": {
+            "label": "Retirement plan",
+            "value": false
+          },
+          "third_party_sick_pay": {
+            "label": "Third-party sick pay",
+            "value": false
+          }
+        },
+        {
+          "who_applies_to": {
+            "label": "Whose W-2 is this?",
+            "value": "spouse"
+          },
+          "ein": {
+            "label": "Employer identification number (EIN)",
+            "value": "360861228"
+          },
+          "employer_name": {
+            "label": "Employer’s name",
+            "value": "Midrana Lunhavvo Inc"
+          },
+          "employer_street_address": {
+            "label": "Employer's address",
+            "value": "9415 Silra Court"
+          },
+          "employer_city": {
+            "label": "Employer's city",
+            "value": "Galyarke"
+          },
+          "employer_state": {
+            "label": "Employer's state",
+            "value": "AK"
+          },
+          "employer_zip": {
+            "label": "Employer's ZIP code",
+            "value": "62882"
+          },
+          "wages": {
+            "label": "Box 1",
+            "value": 107092
+          },
+          "withholding": {
+            "label": "Box 2",
+            "value": 0
+          },
+          "social_security_wages": {
+            "label": "Box 3",
+            "value": 107092
+          },
+          "social_security_tax": {
+            "label": "Box 4",
+            "value": 6641
+          },
+          "medicare_wages_and_tips": {
+            "label": "Box 5",
+            "value": 107092
+          },
+          "medicare_tax_withheld": {
+            "label": "Box 6",
+            "value": 1553
+          },
+          "statutory_employee": {
+            "label": "Statutory",
+            "value": false
+          },
+          "retirement_plan": {
+            "label": "Retirement plan",
+            "value": false
+          },
+          "third_party_sick_pay": {
+            "label": "Third-party sick pay",
+            "value": false
+          }
+        },
+        {
+          "who_applies_to": {
+            "label": "Whose W-2 is this?",
+            "value": "spouse"
+          },
+          "ein": {
+            "label": "Employer identification number (EIN)",
+            "value": "599128413"
+          },
+          "employer_name": {
+            "label": "Employer’s name",
+            "value": "Midrana Lunhavvo Inc"
+          },
+          "employer_street_address": {
+            "label": "Employer's address",
+            "value": "6249 Loti Way"
+          },
+          "employer_city": {
+            "label": "Employer's city",
+            "value": "Korjinzel"
+          },
+          "employer_state": {
+            "label": "Employer's state",
+            "value": "AK"
+          },
+          "employer_zip": {
+            "label": "Employer's ZIP code",
+            "value": "27658"
+          },
+          "wages": {
+            "label": "Box 1",
+            "value": 45831
+          },
+          "withholding": {
+            "label": "Box 2",
+            "value": 1375
+          },
+          "social_security_wages": {
+            "label": "Box 3",
+            "value": 62882
+          },
+          "social_security_tax": {
+            "label": "Box 4",
+            "value": 3898
+          },
+          "medicare_wages_and_tips": {
+            "label": "Box 5",
+            "value": 45831
+          },
+          "medicare_tax_withheld": {
+            "label": "Box 6",
+            "value": 1329
+          },
+          "statutory_employee": {
+            "label": "Statutory",
+            "value": false
+          },
+          "retirement_plan": {
+            "label": "Retirement plan",
+            "value": false
+          },
+          "third_party_sick_pay": {
+            "label": "Third-party sick pay",
+            "value": false
+          }
+        }
+      ]
+    }
+  }
+}

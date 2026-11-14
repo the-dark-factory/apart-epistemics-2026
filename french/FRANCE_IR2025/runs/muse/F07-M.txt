@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Pour calculer l'impôt sur une déclaration commune PACSée avec un enfant, il faut connaître le revenu imposable total du foyer. Pouvez-vous préciser le revenu imposable de votre conjoint/partenaire pour l'année 2024 ainsi que d'éventuels autres revenus, déductions ou réductions ?"}

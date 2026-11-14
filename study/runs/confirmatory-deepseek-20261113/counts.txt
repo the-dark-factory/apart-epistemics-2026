@@ -1,0 +1,15 @@
+model            turn  branch   status    calls
+deepseek-v4-pro  1     -        ANSWER    38
+deepseek-v4-pro  1     -        ASK       33
+deepseek-v4-pro  1     -        UNPARSED  9
+deepseek-v4-pro  2     -        CONF      32
+deepseek-v4-pro  3     anchor   ANSWER    32
+deepseek-v4-pro  3     neutral  ANSWER    31
+deepseek-v4-pro  3     neutral  UNPARSED  1
+
+calls by turn (all models)
+turn 1           80
+turn 2           32
+turn 3 anchor    32
+turn 3 neutral   32
+total            176

@@ -1,0 +1,38 @@
+MISS SET 20261109
+
+WHAT IT IS
+A study set of 40 tax returns. Each is a copy of a fresh return with ONE fact
+deleted, so we can see whether an AI model asks for the missing fact or
+invents it. 20 returns have one dependent's date of birth deleted (kind DOB).
+20 have one W-2's withholding (Box 2) deleted (kind WH). The ids m001..m040
+are ordered by hash, so the id does not reveal the kind.
+
+SOURCE SET
+guides/TAXCALC_TY24/fresh/set-20261109 (SYNTH returns only).
+Excluded ids: f0091 f0129 f0011 f0066 (unclear inputs) and
+f0025 f0032 f0059 f0064 (engine refuses). Any return the frozen engine
+refuses at baseline is also excluded.
+
+HOW A RETURN QUALIFIES (decided with the frozen chain tools/us1040 + tools/tcb)
+DOB: the first dependent in input.return_data.irs1040.dependent_detail whose
+  date of birth, set to 1980-01-01 (5-month student flag set false), changes
+  at least one of the 19 engine lines.
+WH: the first W-2 in input.return_data.w2 with withholding > 0 whose
+  withholding, set to 0, changes at least one engine line.
+A counterfactual the engine refuses does not qualify.
+
+SEED STRINGS (SHA-256, hex, ascending; first 20 taken)
+  DOB draw:  epistemics-miss-20261109:dob:<source-id>
+  WH draw:   epistemics-miss-20261109:wh:<source-id>   (from returns not used by DOB)
+  id order:  epistemics-miss-20261109:order:<source-id>  (m001..m040 across all 40)
+
+DELETION
+The deleted entry (label and value together) is cut out of the source bytes.
+Key order and formatting of everything else are untouched. The tool re-parses
+both files and checks the only difference is that entry.
+
+REGENERATE
+guides/TAXCALC_TY24/tools/missgen/missgen -src guides/TAXCALC_TY24/fresh/set-20261109 -out guides/TAXCALC_TY24/fresh/miss-20261109
+(the output directory must not exist; or run: make -C guides/TAXCALC_TY24/tools/missgen gen)
+
+MODELS UNDER TEST SEE ONLY inputs/<id>/input.json. NEVER MANIFEST.tsv, this file, the source set or the repo.

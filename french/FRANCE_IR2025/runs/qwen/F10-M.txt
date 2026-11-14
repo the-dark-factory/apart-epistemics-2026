@@ -1,0 +1,1 @@
+{"reponse":"9 564 €","revenu_net_imposable":144426,"impot_brut":9564,"impot_net":9564,"question":""}

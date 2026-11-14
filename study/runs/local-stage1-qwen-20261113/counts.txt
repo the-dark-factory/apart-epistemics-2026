@@ -1,0 +1,8 @@
+model            turn  branch   status    calls
+qwen3.8-27b      1     -        ANSWER    53
+qwen3.8-27b      1     -        ASK       23
+qwen3.8-27b      1     -        UNPARSED  4
+
+calls by turn (all models)
+turn 1           80
+total            80

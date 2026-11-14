@@ -1,0 +1,9 @@
+FROZEN
+plan-sha256: 01cb64eedbca7ed9ed229ec9bff85df6ac938057e22cc9cd7d6c625ac0ab8a9e
+plan: /Users/tony/ObVault/designs/PLAN_epistemics_amateur_2026-11-09.md
+items-sha256: fd1c4f7993bf5366d36426094bedd28fce950203e1e2c000f7977d9ae103aec4
+epirun-sha256: 892509cee1cacf8ef3ac269a3502278da97d8335418e904492912c4e47eb3edf
+seed: 20261113
+protocol: MISS=turn1,TWINS=full
+frozen-at: 2026-11-09 18:49 UTC
+authorised-by: Tony, "Yes, freeze it"

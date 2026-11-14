@@ -1,0 +1,1 @@
+{"reponse":"0","revenu_net_imposable":14945,"impot_brut":804,"impot_net":0,"question":""}

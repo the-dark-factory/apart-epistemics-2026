@@ -1,0 +1,19 @@
+model            turn  branch   status    calls
+kimi-k3          1     -        ANSWER    68
+kimi-k3          1     -        ASK       10
+kimi-k3          1     -        FAILED    46
+kimi-k3          1     -        UNPARSED  2
+kimi-k3          2     -        CONF      39
+kimi-k3          2     -        FAILED    2
+kimi-k3          3     anchor   ANSWER    39
+kimi-k3          3     anchor   FAILED    1
+kimi-k3          3     neutral  ANSWER    38
+kimi-k3          3     neutral  FAILED    2
+kimi-k3          3     neutral  UNPARSED  1
+
+calls by turn (all models)
+turn 1           126
+turn 2           41
+turn 3 anchor    40
+turn 3 neutral   41
+total            248

@@ -1,0 +1,1 @@
+{"reponse":"Vous paierez 3 708 € d'impôt sur le revenu en 2025 sur vos revenus 2024 (revenus imposables totaux 63 000 €, abattement 10 % = 6 300 €, revenu net imposable 56 700 €, 2 parts → 28 350 €/part, impôt 1 854 €/part × 2 = 3 708 €; la décote ne s'applique pas car l'impôt dépasse 2 766 €).","revenu_net_imposable":56700,"impot_brut":3708,"impot_net":3708,"question":""}

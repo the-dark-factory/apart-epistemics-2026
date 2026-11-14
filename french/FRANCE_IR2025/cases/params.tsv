@@ -1,0 +1,15 @@
+# id	S1	S2	COUPLE	CHILDREN	ALONE	miss_kind	note
+F01	24000	0	0	0	0	-	single, ordinary salary
+F02	19384	0	0	0	0	-	single, just under the collection limit (net 0)
+F03	42000	0	0	0	0	-	single, 30 % band
+F04	31000	0	0	1	1	CHILDREN	single parent, 1 child, case T
+F05	48000	0	0	2	1	CHILDREN	single parent, 2 children, case T
+F06	35000	28000	1	0	0	S2	couple, two earners, no children
+F07	52000	0	1	1	0	S2	couple, one earner, 1 child (spouse no income)
+F08	60000	0	1	2	0	S2	couple + 2, official brochure example (brut 2 146)
+F09	45000	38000	1	3	0	S2	couple + 3, two earners
+F10	144426	0	1	4	0	S2	couple + 4, BOFiP cap example (14 585)
+F11	21000	15500	1	2	0	S2	couple + 2, low income, decote
+F12	95000	0	0	0	0	-	single, 41 % band
+F13	120000	85000	1	0	0	S2	couple, high income
+F14	88900	0	0	1	1	CHILDREN	single parent, cap binds

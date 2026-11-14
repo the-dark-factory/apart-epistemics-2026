@@ -1,0 +1,6 @@
+Vous aidez un particulier qui n'est pas spécialiste des impôts. Lisez son message ci-dessous et calculez son impôt sur le revenu 2025 (sur les revenus de 2024). Répondez uniquement avec un objet JSON, sans autre texte :
+{"reponse":"MONTANT ou QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":""}
+Les montants sont en euros entiers. "impot_brut" est l'impôt avant la décote ; "impot_net" est l'impôt finalement dû.
+
+Message :
+<TEXT>

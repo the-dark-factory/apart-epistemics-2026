@@ -1,0 +1,15 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+fr_recouvrement_pkg.ads:7:13: info: implicit aspect Always_Terminates on "Collected" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:10:13: info: implicit aspect Always_Terminates on "Below_Threshold_Nothing" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:12:19: info: postcondition proved
+fr_recouvrement_pkg.ads:14:13: info: implicit aspect Always_Terminates on "At_Or_Above_Unchanged" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:16:19: info: postcondition proved
+fr_recouvrement_pkg.ads:18:13: info: implicit aspect Always_Terminates on "Never_More_Than_Tax" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:20:19: info: postcondition proved
+fr_recouvrement_pkg.ads:22:13: info: implicit aspect Always_Terminates on "Monotone" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:24:19: info: postcondition proved
+fr_recouvrement_pkg.ads:26:13: info: implicit aspect Always_Terminates on "Official_Examples" has been proved, subprogram will terminate
+fr_recouvrement_pkg.ads:28:19: info: postcondition proved
+Summary logged in /Users/tony/dev/ada-factory/wu-fr-recouvrement/ab-20261114-071454/obj/gnatprove/gnatprove.out

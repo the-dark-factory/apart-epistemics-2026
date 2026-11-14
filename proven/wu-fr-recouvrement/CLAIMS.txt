@@ -1,0 +1,6 @@
+CLAIMS -- Fr_Recouvrement_Pkg, round A (ab-20261114-071454), spec_sha256 aa7488cb8d15c3a4959717337b1333fc27e385634202dfd42f68fb0dcf78207f.
+Written 2026-11-14 ~07:20 by the seat against the FORGED text (Collected read; 5 Posts, 5 "postcondition proved").
+Gate accepted, 0 unproved, faithful, 23 s.
+PROVED for every T 0 .. 10**7 EUR: C1 Collected = 0 below 61 EUR, else T (CGI art. 1657, 1 bis) [definition];
+C2 BELOW-THRESHOLD-NOTHING; C3 AT-OR-ABOVE-UNCHANGED; C4 NEVER-MORE-THAN-TAX; C5 MONOTONE; C6 OFFICIAL-EXAMPLES.
+NOT CLAIMED: tax credits (none in scope; the article applies the threshold before them); any other collection rule.

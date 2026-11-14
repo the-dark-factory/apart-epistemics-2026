@@ -1,0 +1,2 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Pouvez-vous préciser le montant du salaire imposable de votre mari pour 2024 ? Sans ce montant il est impossible de calculer le revenu net imposable du foyer et l’impôt sur le revenu 2025."}
+

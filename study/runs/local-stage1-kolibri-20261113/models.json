@@ -1,0 +1,13 @@
+[
+  {
+    "name": "kolibri-1",
+    "kind": "openai",
+    "base_url": "http://localhost:18096/v1",
+    "model": "kolibri-1-q4_k_m",
+    "key_env": "OLLAMA_DUMMY_KEY",
+    "price_in": 0.001,
+    "price_out": 0.001,
+    "concurrency": 1,
+    "max_output_tokens": 16384
+  }
+]

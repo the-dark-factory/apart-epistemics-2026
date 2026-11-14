@@ -1,0 +1,10 @@
+```json
+{
+    "reponse": "MONTANT",
+    "revenu_net_imposable": 88900,
+    "impot_brut": 7235,
+    "impot_net": 4135,
+    "question": ""
+}
+```
+Note : calcul effectué sur la base des taux et barèmes connus en octobre 2023 pour une personne seule avec enfants à charge (part fiscale supplémentaire) ainsi que déduction forfaitaire de 10 %. Si les seuils et plafonds ont été modifiés ultérieurement, ce calcul pourrait ne pas être actualisé.

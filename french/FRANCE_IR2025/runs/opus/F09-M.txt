@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Quel est le salaire imposable 2024 de votre épouse ? Comme vous êtes imposés ensemble, il faut additionner vos deux revenus pour calculer votre impôt (5 parts avec trois enfants à charge)."}

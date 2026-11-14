@@ -1,0 +1,18 @@
+CLAIMS -- Fr_Bareme_2025_Pkg, round A (ab-20261114-070947), spec_sha256 c005add3db9cc249a75c4992475cb2451620102aeac30844da988fa125b8a5f3.
+Written 2026-11-14 ~07:18 by the seat against the FORGED text (ruling 2026-09-20), read in full; it matches the sheet
+function for function. Gate accepted, 0 unproved, faithful, compile 0, planner qwen3.8-27b-ada:v0.3-bill, 45 s.
+
+WHAT IS PROVED (every value of every parameter; GNATprove "postcondition proved" for all six):
+ C1 Bareme_Half_Cents (R, H) = 200 * N * scale_2025(R / N) exactly, N = H/2, with the French 2025 scale (bands 11 497 /
+    29 315 / 83 823 / 180 294 EUR, rates 0/11/30/41/45 %; BOFiP BOI-IR-LIQ-20-10-20250414; CGI art. 197
+    LEGIARTI000051212954). [the definition; checked by the independent read, not by a theorem]
+ C2 ZERO-UP-TO-FIRST-BAND: income per part <= 11 497 EUR -> tax 0.
+ C3 NEVER-NEGATIVE.
+ C4 AT-MOST-45-PERCENT: tax <= 45 % of income.
+ C5 MONOTONE-IN-INCOME.
+ C6 MORE-PARTS-NEVER-MORE-TAX (before the quotient cap).
+ C7 OFFICIAL-EXAMPLES: 2 145.99 EUR (impots.gouv brochure IR 2025 p.361, couple + 2 children, 54 000 EUR -> 2 146);
+    7 976.65 and 25 330.96 EUR (BOFiP BOI-IR-LIQ-20-20-20, 130 000 EUR at 5 and 2 parts -> 7 977 and 25 331).
+
+WHAT IS NOT CLAIMED: rounding to the euro (art. 193, another unit); the quotient cap (F3); shared custody quarter-parts
+(H counts halves only); income above 10 000 000 EUR or more than 20 parts; that the scale matches any year but 2025.

@@ -1,0 +1,1 @@
+{"reponse":"662 € (calcul sans plafonnement) – mais en réalité, avec le plafonnement du quotient familial, l'impôt s'élève à **1 198 €**.","revenu_net_imposable":60000,"impot_brut":2078,"impot_net":1198,"question":""}

@@ -1,0 +1,7 @@
+{
+  "reponse": "890",
+  "revenu_net_imposable": 19384,
+  "impot_brut": 890,
+  "impot_net": 890,
+  "question": ""
+}

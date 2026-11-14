@@ -1,0 +1,23 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+fr_abattement_2025_pkg.ads:9:12: info: implicit aspect Always_Terminates on "Lower" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:12:12: info: implicit aspect Always_Terminates on "Higher" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:15:12: info: implicit aspect Always_Terminates on "Deduction" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:18:12: info: implicit aspect Always_Terminates on "Net_Salary" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:19:20: info: range check proved
+fr_abattement_2025_pkg.ads:21:12: info: implicit aspect Always_Terminates on "Between_Zero_And_Salary" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:23:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:25:12: info: implicit aspect Always_Terminates on "Ten_Percent_Inside_Limits" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:27:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:29:12: info: implicit aspect Always_Terminates on "Minimum_Applies" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:31:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:33:12: info: implicit aspect Always_Terminates on "Small_Salary_Fully_Deducted" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:35:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:37:12: info: implicit aspect Always_Terminates on "Maximum_Applies" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:39:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:41:12: info: implicit aspect Always_Terminates on "Net_Monotone" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:43:20: info: postcondition proved
+fr_abattement_2025_pkg.ads:45:12: info: implicit aspect Always_Terminates on "Official_Examples" has been proved, subprogram will terminate
+fr_abattement_2025_pkg.ads:47:20: info: postcondition proved
+Summary logged in /Users/tony/dev/ada-factory/wu-fr-abattement/ab-20261114-071412/obj/gnatprove/gnatprove.out

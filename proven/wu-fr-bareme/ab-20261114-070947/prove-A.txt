@@ -1,0 +1,23 @@
+Phase 1 of 3: generation of data representation information ...
+Phase 2 of 3: generation of Global contracts ...
+Phase 3 of 3: flow analysis and proof ...
+fr_bareme_2025_pkg.ads:9:13: info: implicit aspect Always_Terminates on "Clip" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:12:13: info: implicit aspect Always_Terminates on "Lower" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:15:13: info: implicit aspect Always_Terminates on "Bareme_Half_Cents" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:16:59: info: range check proved
+fr_bareme_2025_pkg.ads:17:61: info: range check proved
+fr_bareme_2025_pkg.ads:18:62: info: range check proved
+fr_bareme_2025_pkg.ads:19:08: info: range check proved
+fr_bareme_2025_pkg.ads:21:13: info: implicit aspect Always_Terminates on "Zero_Up_To_First_Band" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:23:19: info: postcondition proved
+fr_bareme_2025_pkg.ads:25:13: info: implicit aspect Always_Terminates on "Never_Negative" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:27:19: info: postcondition proved
+fr_bareme_2025_pkg.ads:29:13: info: implicit aspect Always_Terminates on "At_Most_45_Percent" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:31:19: info: postcondition proved
+fr_bareme_2025_pkg.ads:33:13: info: implicit aspect Always_Terminates on "Monotone_In_Income" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:35:19: info: postcondition proved
+fr_bareme_2025_pkg.ads:37:13: info: implicit aspect Always_Terminates on "More_Parts_Never_More_Tax" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:39:19: info: postcondition proved
+fr_bareme_2025_pkg.ads:41:13: info: implicit aspect Always_Terminates on "Official_Examples" has been proved, subprogram will terminate
+fr_bareme_2025_pkg.ads:43:19: info: postcondition proved
+Summary logged in /Users/tony/dev/ada-factory/wu-fr-bareme/ab-20261114-070947/obj/gnatprove/gnatprove.out

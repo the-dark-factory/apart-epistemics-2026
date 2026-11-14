@@ -1,0 +1,1 @@
+{"reponse":"QUESTION","revenu_net_imposable":0,"impot_brut":0,"impot_net":0,"question":"Vous indiquez que votre femme travaille également mais vous ne précisez pas le montant de son salaire imposable 2024. Pouvez-vous me communiquer son revenu salarial imposable 2024, ainsi que confirmer si les 45 000 € mentionnés sont bruts avant abattement de 10 % ?"}
