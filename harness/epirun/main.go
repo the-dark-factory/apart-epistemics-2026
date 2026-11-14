@@ -128,9 +128,11 @@ func runCmd(ctx context.Context, args []string, stdout, stderr io.Writer) error 
 	frozenPath := fs.String("frozen", "", "freeze file holding FROZEN and plan-sha256")
 	seed := fs.Int64("seed", 0, "seed for the fixed random item order (required for any set other than DEV)")
 	protoFlag := fs.String("protocol", "", "per-set protocol, e.g. MISS=turn1,TWINS=full (MISS defaults to turn1, others to full)")
+	strict := fs.Bool("strict-missing", false, "post-hoc baseline: add the do-not-assume sentence to turn 1 (never frozen)")
 	if err := fs.Parse(args); err != nil {
 		return err
 	}
+	strictMissing = *strict
 	seedGiven := false
 	fs.Visit(func(f *flag.Flag) {
 		if f.Name == "seed" {

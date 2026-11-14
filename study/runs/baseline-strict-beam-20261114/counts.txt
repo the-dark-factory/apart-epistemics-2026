@@ -1,0 +1,8 @@
+model            turn  branch   status    calls
+Beam-1.0         1     -        ANSWER    23
+Beam-1.0         1     -        ASK       26
+Beam-1.0         1     -        FAILED    31
+
+calls by turn (all models)
+turn 1           80
+total            80

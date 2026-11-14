@@ -1,0 +1,13 @@
+[
+  {
+    "name": "kimi-k3",
+    "kind": "openai",
+    "base_url": "https://api.moonshot.ai/v1",
+    "model": "kimi-k3",
+    "key_env": "MOONSHOT_API_KEY",
+    "price_in": 1.0,
+    "price_out": 10.0,
+    "concurrency": 4,
+    "max_output_tokens": 32768
+  }
+]

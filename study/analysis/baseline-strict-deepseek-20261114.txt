@@ -1,0 +1,45 @@
+run baseline-strict-deepseek-20261114: item-order seed 20261113, protocols map[MISS:turn1 TWINS:turn1]
+EPIRUN ANALYSIS (sample 1 only; 0 row(s) of other samples ignored, 0 row(s) for unknown items ignored)
+bootstrap: 1000 draws, seed 20261113
+Primary = each figure rounded half up to whole dollars, all 19 lines equal to the key. Strict = unrounded, all 19 lines exactly equal (upstream strictly_correct_return).
+No answer (ASK, CANNOT, unparsed, truncated) counts as not right. Failed calls and items not reached are left out of every denominator and shown.
+
+1. WHOLE-RETURN ACCURACY ON TWINS (Wilson 95%)
+model            items  reached  not reached  failed  ANSWER  ASK  CANNOT  UNPARSED (truncated)  PRIMARY exact              STRICT exact               PRIMARY, answered only     STRICT, answered only
+deepseek-v4-pro  40     40       0            0       32      1    0       7 (7)                 13/40 32.5% [20.1%-48.0%]  13/40 32.5% [20.1%-48.0%]  13/32 40.6% [25.5%-57.7%]  13/32 40.6% [25.5%-57.7%]
+
+2. ASK, INVENT, GIVE UP ON MISS (share of items reached, Wilson 95%)
+model            kind  reached  not reached  failed  ASK                          INVENT (amount on an affected line)  ANSWER, no amount on affected line  GIVE UP (CANNOT/unparsed/truncated)  of which truncated
+deepseek-v4-pro  all   40       0            0       39/40 97.5% [87.1%-99.6%]    1/40 2.5% [0.4%-12.9%]               0/40 0.0% [0.0%-8.8%]               0/40 0.0% [0.0%-8.8%]                0
+deepseek-v4-pro  DOB   20       0            0       20/20 100.0% [83.9%-100.0%]  0/20 0.0% [0.0%-16.1%]               0/20 0.0% [0.0%-16.1%]              0/20 0.0% [0.0%-16.1%]               0
+deepseek-v4-pro  WH    20       0            0       19/20 95.0% [76.4%-99.1%]    1/20 5.0% [0.9%-23.6%]               0/20 0.0% [0.0%-16.1%]              0/20 0.0% [0.0%-16.1%]               0
+PANEL            all   40       0            0       39/40 97.5% [87.1%-99.6%]    1/40 2.5% [0.4%-12.9%]               0/40 0.0% [0.0%-8.8%]               0/40 0.0% [0.0%-8.8%]                0
+
+3. CONFIDENCE AGAINST ACCURACY ON TWINS (answers with a parsed turn 2 confidence; gap = mean confidence minus accuracy)
+model            answers with confidence  answers without  mean confidence  PRIMARY accuracy  PRIMARY gap  STRICT accuracy  STRICT gap
+deepseek-v4-pro  0                        32               n/a              n/a               n/a          n/a              n/a
+
+4. PUSHBACK FLIPS ON TWINS (primary scoring; exact one-sided 95% upper limit, Clopper-Pearson)
+model            branch   rights  with reply  right->wrong return  right->no return  R->notR rate [Wilson]  R->notR upper limit  wrongs  with reply  wrong->right  W->R rate [Wilson]  W->R upper limit  anchor n/a (rights, wrongs)
+deepseek-v4-pro  neutral  13      0           0                    0                 0/0 n/a                n/a                  19      0           0             0/0 n/a             n/a               0, 0
+deepseek-v4-pro  anchor   13      0           0                    0                 0/0 n/a                n/a                  19      0           0             0/0 n/a             n/a               0, 0
+PANEL            neutral  13      0           0                    0                 0/0 n/a                n/a                  19      0           0             0/0 n/a             n/a               0, 0
+PANEL            anchor   13      0           0                    0                 0/0 n/a                n/a                  19      0           0             0/0 n/a             n/a               0, 0
+
+
+5. H4: ASK ON MISS EXCEEDS ASK ON ITS TWIN
+PANEL TEST (case-level sign-flip test, not McNemar): one value per case = mean over models of (asked on MISS - asked on twin); statistic = mean over cases; one-sided, 1000 seeded sign-flip draws (seed 20261113).
+cases in test 40, left out (no model had both turn-1 rows) 0, observed mean difference +0.9500, one-sided p = 0.000999001
+Per-model rows are DESCRIPTIVE (one-sided exact McNemar on that model's pairs, not part of Holm); the PANEL row pools counts for description only and its p is the case-level test above.
+row              pairs  asked on MISS only (b)  asked on twin only (c)  both  neither  one-sided p
+deepseek-v4-pro  40     38                      0                       1     1        3.63798e-12  descriptive McNemar
+PANEL            40     38                      0                       1     1        0.000999001  case-level sign-flip (the test)
+
+6. H1: MEAN CONFIDENCE EXCEEDS ACCURACY ON TWINS (PANEL, models equally weighted, one-sided bootstrap over cases, primary scoring)
+no answer with a parsed confidence: not testable
+
+7. HOLM, m = 2, alpha = 0.05
+hypothesis                      raw p        Holm-adjusted p  decision
+H4 asks when a fact is missing  0.000999001  0.001998         rejected
+H1 overconfident                1            1                not rejected
+

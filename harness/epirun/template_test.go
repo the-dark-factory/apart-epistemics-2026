@@ -145,3 +145,35 @@ func TestPyJSONDumps(t *testing.T) {
 		t.Error("trailing data should fail")
 	}
 }
+
+// TestStrictMissing checks the post-hoc baseline: off by default, the turn 1
+// template keeps the frozen sha256 logged by every confirmatory run; on, the
+// do-not-assume sentence appears exactly once and the sha256 changes.
+func TestStrictMissing(t *testing.T) {
+	const frozenSHA = "bc236f50bc2777fcfbf076dadd84fdff57c6225fe5dae00242e898869a60b2dc"
+	tests := []struct {
+		name    string
+		strict  bool
+		wantN   int
+		wantSHA bool
+	}{
+		{"off keeps the frozen template", false, 0, true},
+		{"on adds the sentence once", true, 1, false},
+	}
+	defer func() { strictMissing = false }()
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			strictMissing = tc.strict
+			tmpl, err := turn1Template()
+			if err != nil {
+				t.Fatalf("turn1Template: %v", err)
+			}
+			if n := strings.Count(tmpl, strictMissingText); n != tc.wantN {
+				t.Errorf("sentence count = %d, want %d", n, tc.wantN)
+			}
+			if got := sha256Hex([]byte(tmpl)) == frozenSHA; got != tc.wantSHA {
+				t.Errorf("sha matches frozen = %v, want %v", got, tc.wantSHA)
+			}
+		})
+	}
+}

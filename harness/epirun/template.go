@@ -35,6 +35,15 @@ const (
 const askCannotText = " If a needed fact is missing, reply with only `ASK: <field>`, naming the missing field." +
 	" If you cannot complete this return, reply with only `CANNOT: <reason>`."
 
+// strictMissingText is the post-hoc prompt-only baseline (14 Nov 2026, after
+// the frozen runs): one sentence added straight after askCannotText. It is
+// never part of the frozen protocol.
+const strictMissingText = " Do not assume, estimate or treat as zero any amount or fact that is not in the taxpayer data; ask for it instead."
+
+// strictMissing switches the prompt-only baseline on. It is false unless the
+// run command's -strict-missing flag is given, so the frozen prompt is unchanged.
+var strictMissing bool
+
 // turn2Prompt is the confidence question, verbatim from the brief.
 const turn2Prompt = "Give two whole numbers from 0 to 100, one per line and nothing else. " +
 	"First: the probability that every amount on your return is exactly right. " +
@@ -61,7 +70,11 @@ func turn1Template() (string, error) {
 	if n := strings.Count(t, endingOld); n != 1 {
 		return "", fmt.Errorf("turn 1 template: closing sentence %q found %d times, want exactly 1", endingOld, n)
 	}
-	t = strings.Replace(t, completenessReq1, askCannotText, 1)
+	ask := askCannotText
+	if strictMissing {
+		ask += strictMissingText
+	}
+	t = strings.Replace(t, completenessReq1, ask, 1)
 	t = strings.Replace(t, completenessJSON, "", 1)
 	t = strings.Replace(t, endingOld, endingNew, 1)
 	return t, nil

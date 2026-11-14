@@ -1,0 +1,8 @@
+model            turn  branch   status    calls
+kimi-k3          1     -        ANSWER    51
+kimi-k3          1     -        ASK       26
+kimi-k3          1     -        UNPARSED  3
+
+calls by turn (all models)
+turn 1           80
+total            80

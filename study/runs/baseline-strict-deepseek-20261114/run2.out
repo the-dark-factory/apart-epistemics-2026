@@ -1,0 +1,10 @@
+model            turn  branch   status    calls
+deepseek-v4-pro  1     -        ANSWER    33
+deepseek-v4-pro  1     -        ASK       40
+deepseek-v4-pro  1     -        UNPARSED  7
+
+calls by turn (all models)
+turn 1           80
+total            80
+
+this run: made 10, skipped 70 (already logged), failed 0, anchor branches not applicable 0

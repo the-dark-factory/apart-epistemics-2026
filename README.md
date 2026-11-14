@@ -1,7 +1,7 @@
-# It asked your birthday, then guessed your tax
+# It asked your child's birthday, then guessed your tax
 
 Code and data for the Apart AI × Epistemics Research Sprint report (13–16 November 2026):
-*It asked your birthday, then guessed your tax: knowing what you weren't told is not a model skill.*
+*It asked your child's birthday, then guessed your tax: knowing what you weren't told should not be left to the model.*
 
 Author: Tony Gair, The Dark Factory Ltd. Licence: AGPL-3.0 (see `LICENSE`). The TaxCalcBench-derived returns keep
 TaxCalcBench's MIT licence (github.com/column-tax/tax-calc-bench).
@@ -13,6 +13,8 @@ TaxCalcBench's MIT licence (github.com/column-tax/tax-calc-bench).
 | `harness/epirun/` | The Go harness that ran every model call and the pre-registered analysis (`epirun run`, `epirun analyse`) | **Pre-existing** (built before 13 Nov) |
 | `study/frozen/` | The frozen plan (`PLAN.md`), the item list (`items.jsonl`), the freeze file (`FROZEN.txt`, hashes made before any run), and the 80 returns with their keys (`fresh/`) | **Pre-existing** (frozen 9 Nov) |
 | `study/runs/` | Every logged call for all eight models (`calls.jsonl`), their settings (`models.json`, `run-params.json`) and counts | **Sprint** |
+| `study/runs/baseline-strict-*` | Post-hoc stronger-prompt baseline (report Table 6): turn 1 on all 80 returns with `epirun run -strict-missing`; Beam's run is partial (daily allowance) | **Sprint**, after the freeze |
+| `study/analysis/` | `epirun analyse` output for every run | **Sprint** |
 | `french/FRANCE_IR2025/` | French arm: the 14 households (`cases/params.tsv`, `cases/texts_fr.md`), the answer key from the proven calculator (`cases/key.tsv`), the French prompt, and every model's raw replies (`runs/`) | **Sprint** |
 | `french/scripts/` | The French run and scoring scripts, the deterministic gap probe (`gapprobe.zsh`) and the proven-gate replay adapter (`gate-run.zsh`) | **Sprint** |
 | `proven/` | The machine-proved SPARK Ada units built in the sprint: their admitted specifications (`admit-A-*/`), their CLAIMS, the GNATprove logs, and the two forged command-line programs with their probe results | **Sprint** |

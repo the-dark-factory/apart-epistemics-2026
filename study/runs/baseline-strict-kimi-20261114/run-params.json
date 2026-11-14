@@ -1,0 +1,7 @@
+{
+  "seed": 20261113,
+  "protocols": {
+    "MISS": "turn1",
+    "TWINS": "turn1"
+  }
+}
