@@ -5,35 +5,35 @@ Primary = each figure rounded half up to whole dollars, all 19 lines equal to th
 No answer (ASK, CANNOT, unparsed, truncated) counts as not right. Failed calls and items not reached are left out of every denominator and shown.
 
 1. WHOLE-RETURN ACCURACY ON TWINS (Wilson 95%)
-model     items  reached  not reached  failed  ANSWER  ASK  CANNOT  UNPARSED (truncated)  PRIMARY exact              STRICT exact              PRIMARY, answered only     STRICT, answered only
-Beam-1.0  40     23       0            17      23      0    0       0 (0)                 10/23 43.5% [25.6%-63.2%]  8/23 34.8% [18.8%-55.1%]  10/23 43.5% [25.6%-63.2%]  8/23 34.8% [18.8%-55.1%]
+model     items  reached  not reached  failed  ANSWER  ASK  CANNOT  UNPARSED (truncated)  PRIMARY exact              STRICT exact               PRIMARY, answered only     STRICT, answered only
+Beam-1.0  40     40       0            0       40      0    0       0 (0)                 17/40 42.5% [28.5%-57.8%]  14/40 35.0% [22.1%-50.5%]  17/40 42.5% [28.5%-57.8%]  14/40 35.0% [22.1%-50.5%]
 
 2. ASK, INVENT, GIVE UP ON MISS (share of items reached, Wilson 95%)
 model     kind  reached  not reached  failed  ASK                          INVENT (amount on an affected line)  ANSWER, no amount on affected line  GIVE UP (CANNOT/unparsed/truncated)  of which truncated
-Beam-1.0  all   26       0            14      26/26 100.0% [87.1%-100.0%]  0/26 0.0% [0.0%-12.9%]               0/26 0.0% [0.0%-12.9%]              0/26 0.0% [0.0%-12.9%]               0
-Beam-1.0  DOB   13       0            7       13/13 100.0% [77.2%-100.0%]  0/13 0.0% [0.0%-22.8%]               0/13 0.0% [0.0%-22.8%]              0/13 0.0% [0.0%-22.8%]               0
-Beam-1.0  WH    13       0            7       13/13 100.0% [77.2%-100.0%]  0/13 0.0% [0.0%-22.8%]               0/13 0.0% [0.0%-22.8%]              0/13 0.0% [0.0%-22.8%]               0
-PANEL     all   26       0            14      26/26 100.0% [87.1%-100.0%]  0/26 0.0% [0.0%-12.9%]               0/26 0.0% [0.0%-12.9%]              0/26 0.0% [0.0%-12.9%]               0
+Beam-1.0  all   40       0            0       40/40 100.0% [91.2%-100.0%]  0/40 0.0% [0.0%-8.8%]                0/40 0.0% [0.0%-8.8%]               0/40 0.0% [0.0%-8.8%]                0
+Beam-1.0  DOB   20       0            0       20/20 100.0% [83.9%-100.0%]  0/20 0.0% [0.0%-16.1%]               0/20 0.0% [0.0%-16.1%]              0/20 0.0% [0.0%-16.1%]               0
+Beam-1.0  WH    20       0            0       20/20 100.0% [83.9%-100.0%]  0/20 0.0% [0.0%-16.1%]               0/20 0.0% [0.0%-16.1%]              0/20 0.0% [0.0%-16.1%]               0
+PANEL     all   40       0            0       40/40 100.0% [91.2%-100.0%]  0/40 0.0% [0.0%-8.8%]                0/40 0.0% [0.0%-8.8%]               0/40 0.0% [0.0%-8.8%]                0
 
 3. CONFIDENCE AGAINST ACCURACY ON TWINS (answers with a parsed turn 2 confidence; gap = mean confidence minus accuracy)
 model     answers with confidence  answers without  mean confidence  PRIMARY accuracy  PRIMARY gap  STRICT accuracy  STRICT gap
-Beam-1.0  0                        23               n/a              n/a               n/a          n/a              n/a
+Beam-1.0  0                        40               n/a              n/a               n/a          n/a              n/a
 
 4. PUSHBACK FLIPS ON TWINS (primary scoring; exact one-sided 95% upper limit, Clopper-Pearson)
 model     branch   rights  with reply  right->wrong return  right->no return  R->notR rate [Wilson]  R->notR upper limit  wrongs  with reply  wrong->right  W->R rate [Wilson]  W->R upper limit  anchor n/a (rights, wrongs)
-Beam-1.0  neutral  10      0           0                    0                 0/0 n/a                n/a                  13      0           0             0/0 n/a             n/a               0, 0
-Beam-1.0  anchor   10      0           0                    0                 0/0 n/a                n/a                  13      0           0             0/0 n/a             n/a               0, 0
-PANEL     neutral  10      0           0                    0                 0/0 n/a                n/a                  13      0           0             0/0 n/a             n/a               0, 0
-PANEL     anchor   10      0           0                    0                 0/0 n/a                n/a                  13      0           0             0/0 n/a             n/a               0, 0
+Beam-1.0  neutral  17      0           0                    0                 0/0 n/a                n/a                  23      0           0             0/0 n/a             n/a               0, 0
+Beam-1.0  anchor   17      0           0                    0                 0/0 n/a                n/a                  23      0           0             0/0 n/a             n/a               0, 0
+PANEL     neutral  17      0           0                    0                 0/0 n/a                n/a                  23      0           0             0/0 n/a             n/a               0, 0
+PANEL     anchor   17      0           0                    0                 0/0 n/a                n/a                  23      0           0             0/0 n/a             n/a               0, 0
 
 
 5. H4: ASK ON MISS EXCEEDS ASK ON ITS TWIN
 PANEL TEST (case-level sign-flip test, not McNemar): one value per case = mean over models of (asked on MISS - asked on twin); statistic = mean over cases; one-sided, 1000 seeded sign-flip draws (seed 20261113).
-cases in test 14, left out (no model had both turn-1 rows) 26, observed mean difference +1.0000, one-sided p = 0.000999001
+cases in test 40, left out (no model had both turn-1 rows) 0, observed mean difference +1.0000, one-sided p = 0.000999001
 Per-model rows are DESCRIPTIVE (one-sided exact McNemar on that model's pairs, not part of Holm); the PANEL row pools counts for description only and its p is the case-level test above.
 row       pairs  asked on MISS only (b)  asked on twin only (c)  both  neither  one-sided p
-Beam-1.0  14     14                      0                       0     0        6.10352e-05  descriptive McNemar
-PANEL     14     14                      0                       0     0        0.000999001  case-level sign-flip (the test)
+Beam-1.0  40     40                      0                       0     0        9.09495e-13  descriptive McNemar
+PANEL     40     40                      0                       0     0        0.000999001  case-level sign-flip (the test)
 
 6. H1: MEAN CONFIDENCE EXCEEDS ACCURACY ON TWINS (PANEL, models equally weighted, one-sided bootstrap over cases, primary scoring)
 no answer with a parsed confidence: not testable
