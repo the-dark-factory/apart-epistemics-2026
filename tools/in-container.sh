@@ -1,13 +1,14 @@
-#!/bin/zsh
-# in-container.zsh — run any make target inside the tools container, with nothing to install but podman or docker.
+#!/bin/sh
+# in-container.sh — run any make target inside the tools container, with nothing to install but podman or docker.
 #
+# Plain POSIX sh on purpose: it runs on a stock Ubuntu or macOS with no extra shell installed.
 # The first run builds the image (Go, jq, zsh, GNAT 15, GPRbuild, GNATprove); later runs reuse it.
 # Results are written to this repository's build/ folder, so you can open them afterwards.
 #
 # Usage:
-#   tools/in-container.zsh check
-#   tools/in-container.zsh prove
-#   MY_KEY=… tools/in-container.zsh try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=MY_KEY
+#   tools/in-container.sh check
+#   tools/in-container.sh prove
+#   MY_KEY=… tools/in-container.sh try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=MY_KEY
 #
 # Your API key is passed in only by name (KEY_ENV=…), from your environment, and is never written to disk.
 #
@@ -29,24 +30,29 @@
 #
 # Supported: macOS (Apple Silicon) and Ubuntu 24.04 (x86_64 or arm64).
 set -e
-repo=${0:A:h:h}
+repo=$(cd "$(dirname "$0")/.." && pwd)
 image=epistemics-study
-tool=$(command -v podman || command -v docker || true)
-[[ -n $tool ]] || { echo "in-container: install podman or docker first" >&2; exit 1; }
-(( $# > 0 )) || set -- help
 
-case $(uname -m) in arm64|aarch64) platform=linux/arm64;; *) platform=linux/amd64;; esac
+if command -v podman > /dev/null 2>&1; then tool=podman
+elif command -v docker > /dev/null 2>&1; then tool=docker
+else echo "in-container: install podman or docker first" >&2; exit 1
+fi
+[ $# -gt 0 ] || set -- help
+
+case $(uname -m) in arm64|aarch64) platform=linux/arm64 ;; *) platform=linux/amd64 ;; esac
 if ! $tool image inspect $image > /dev/null 2>&1; then
   echo "Building the tools container for $platform (first run only, a few minutes)…"
-  $tool build --platform $platform -t $image $repo
+  $tool build --platform $platform -t $image "$repo"
 fi
 
-envargs=()
+# Pass the named API key variable (KEY_ENV=NAME) through from your environment, by name only.
+envarg=
 for a in "$@"; do
-  [[ $a == KEY_ENV=* ]] && envargs+=(-e ${a#KEY_ENV=})
+  case $a in KEY_ENV=*) envarg="-e ${a#KEY_ENV=}" ;; esac
 done
 
-tty=()
-[[ -t 0 && -t 1 ]] && tty=(-it)
-mkdir -p $repo/build
-exec $tool run --rm $tty $envargs -v $repo/build:/study/build --network host $image make "$@"
+tty=
+if [ -t 0 ] && [ -t 1 ]; then tty=-it; fi
+mkdir -p "$repo/build"
+# shellcheck disable=SC2086  # $tty and $envarg are deliberately unquoted: each is empty or one or two words
+exec $tool run --rm $tty $envarg -v "$repo/build:/study/build" --network host $image make "$@"

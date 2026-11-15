@@ -1,6 +1,6 @@
 # Tools container: everything needed to repeat the study, including the SPARK prover.
 #
-# Easiest: tools/in-container.zsh <make target>   (builds this image on first use, for your machine's own CPU)
+# Easiest: tools/in-container.sh <make target>   (builds this image on first use, for your machine's own CPU)
 # By hand:
 #   podman build -t epistemics-study .          (or: docker build -t epistemics-study .)
 #   podman run --rm epistemics-study make check
@@ -8,7 +8,7 @@
 # Holds Go, jq, zsh and make, plus GNAT 15, GPRbuild and GNATprove from Alire.
 #
 # This file is also the install guide. There are deliberately no separate manual steps, which would drift.
-# To set up by hand, repeat the RUN lines below on Ubuntu 24.04, in order. See tools/in-container.zsh for why.
+# To set up by hand, repeat the RUN lines below on Ubuntu 24.04, in order. See tools/in-container.sh for why.
 FROM docker.io/library/ubuntu:24.04
 
 ARG GO_VERSION=1.26.1

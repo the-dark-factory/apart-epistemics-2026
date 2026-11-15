@@ -65,13 +65,13 @@ OLLAMA_KEY=none make try BASE_URL=http://localhost:11434/v1 MODEL=llama3.1 KEY_E
 Add `STRICT=1` to use the stronger "do not assume" prompt (Table 6). A run that stops can be resumed by running
 the same command again.
 
-**Nothing to install but podman or docker.** Put `tools/in-container.zsh` in front of any target. The first run
+**Nothing to install but podman or docker.** Put `tools/in-container.sh` in front of any target. The first run
 builds a tools container (Go, jq, GNAT 15, GPRbuild, GNATprove); results land in your own `build/` folder.
 
 ```
-tools/in-container.zsh check
-tools/in-container.zsh prove
-MY_KEY=… tools/in-container.zsh try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=MY_KEY
+tools/in-container.sh check
+tools/in-container.sh prove
+MY_KEY=… tools/in-container.sh try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=MY_KEY
 ```
 
 Inside the container on a Mac or Windows, a model served on your own machine (Ollama) is at
