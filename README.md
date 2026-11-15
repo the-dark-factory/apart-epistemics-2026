@@ -1,7 +1,7 @@
-# It asked your child's birthday, then guessed your tax
+# It asked your child's birthday, then assumed you had paid no tax
 
 Code and data for the Apart AI × Epistemics Research Sprint report (13–16 November 2026):
-*It asked your child's birthday, then guessed your tax: knowing what you weren't told should not be left to the model.*
+*It asked your child's birthday, then assumed you had paid no tax: knowing what you weren't told should not be left to the model.*
 
 Author: Tony Gair, The Dark Factory Ltd. Licence: AGPL-3.0 (see `LICENSE`). The TaxCalcBench-derived returns keep
 TaxCalcBench's MIT licence (github.com/column-tax/tax-calc-bench).
