@@ -6,6 +6,9 @@
 #   podman run --rm epistemics-study make check
 #
 # Holds Go, jq, zsh and make, plus GNAT 15, GPRbuild and GNATprove from Alire.
+#
+# This file is also the install guide. There are deliberately no separate manual steps, which would drift.
+# To set up by hand, repeat the RUN lines below on Ubuntu 24.04, in order. See tools/in-container.zsh for why.
 FROM docker.io/library/ubuntu:24.04
 
 ARG GO_VERSION=1.26.1
