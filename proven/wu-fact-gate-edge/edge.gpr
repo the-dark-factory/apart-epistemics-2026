@@ -1,0 +1,11 @@
+--  Builds the fact gate command-line program around the proven unit.
+--  Run from this directory:  gprbuild -P edge.gpr
+project Edge is
+   for Source_Dirs use (".", "../wu-fact-gate/admit-A-20261114");
+   for Object_Dir use "obj";
+   for Main use ("fact_gate_main.adb");
+   for Exec_Dir use ".";
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU");
+   end Compiler;
+end Edge;

@@ -1,0 +1,9 @@
+--  Proof project for the whole French calculation, with the switches the factory used.
+--  Run from this directory:  gnatprove -P proof.gpr --level=2 --report=all
+project Proof is
+   for Source_Dirs use (".", "deps");
+   for Object_Dir use "obj";
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU", "-gnata");
+   end Compiler;
+end Proof;

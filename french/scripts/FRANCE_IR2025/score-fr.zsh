@@ -4,7 +4,7 @@
 #   Missing (-M): ASK when reponse is QUESTION (or no number at all); INVENT when reponse is MONTANT with an impot_net.
 #   Unparsed replies (no JSON object) are counted apart.
 set -u
-d=$1; G=${0:A:h}
+d=$1; G=${FR_DIR:-${0:A:h}}   # FR_DIR: the folder holding cases/ (the repo Makefile sets it)
 right=0; brut=0; comp=0; unp=0; ask=0; inv=0; miss=0; unpm=0
 grep -v '^#' $G/cases/key.tsv | while IFS=$'\t' read id tx br net mk; do
   f=$d/$id-C.txt

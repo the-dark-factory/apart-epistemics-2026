@@ -34,7 +34,53 @@ TaxCalcBench's MIT licence (github.com/column-tax/tax-calc-bench).
 
 The prose specifications from which these units were generated, and the factory that generated them, are not included.
 
-## Reproducing
+## Try it yourself
+
+Everything in the report can be checked from this repository, and you can put your own model through the
+same test. Each step is one `make` target:
+
+| Command | What you get | Cost |
+|---|---|---|
+| `make check` | Re-scores all 12 runs from the logged replies and compares them with the published analysis, line for line | Free, no keys, seconds |
+| `make scoreboard` | One line per model: right answers, questions asked, facts invented (Table 2 and Table 6) | Free |
+| `make probe` | The deterministic gap check flags 40 of 40 missing-fact returns and none of the complete ones, with no model | Free, about a second |
+| `make prove` | Re-runs GNATprove on all seven proven units, so you check the proofs instead of trusting the logs | Free, about a minute |
+| `make gate` | Builds the proven fact gate and replays it over all 80 returns (Table 5) | Free |
+| `make french` | Scores every model's French replies against the proven calculator's key (Table 3) | Free |
+| `make demo` | The whole run pipeline end to end, with a scripted fake model | Free, no keys |
+| `make try …` | **Your model** on the same 80 returns, placed beside the four frontier models | Your API cost, capped by `BUDGET` |
+
+To test a model of your own, use any OpenAI-compatible endpoint:
+
+```
+make try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=EXAMPLE_API_KEY PRICE_IN=1 PRICE_OUT=10 BUDGET=5
+```
+
+Or, for a free local model with Ollama:
+
+```
+OLLAMA_KEY=none make try BASE_URL=http://localhost:11434/v1 MODEL=llama3.1 KEY_ENV=OLLAMA_KEY
+```
+
+Add `STRICT=1` to use the stronger "do not assume" prompt (Table 6). A run that stops can be resumed by running
+the same command again.
+
+**Nothing to install but podman or docker.** Put `tools/in-container.zsh` in front of any target. The first run
+builds a tools container (Go, jq, GNAT 15, GPRbuild, GNATprove); results land in your own `build/` folder.
+
+```
+tools/in-container.zsh check
+tools/in-container.zsh prove
+MY_KEY=… tools/in-container.zsh try BASE_URL=https://api.example.com/v1 MODEL=model-id KEY_ENV=MY_KEY
+```
+
+Inside the container on a Mac or Windows, a model served on your own machine (Ollama) is at
+`http://host.containers.internal:11434/v1` with podman, or `http://host.docker.internal:11434/v1` with docker.
+
+**Platforms.** Supported: macOS on Apple Silicon, and Ubuntu 24.04 on x86_64 or arm64 (natively or in the
+tools container, which is itself Ubuntu 24.04). Other systems may work but are not supported.
+
+## Reproducing (details)
 
 - **Pre-registered analysis:** `cd harness/epirun && go build && ./epirun analyse -items ../../study/frozen/items.jsonl -run ../../study/runs/<run> -boot 1000`.
   The four-model panel test concatenates the four frontier runs' `calls.jsonl`.

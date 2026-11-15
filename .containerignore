@@ -1,0 +1,9 @@
+.git
+build
+harness/epirun/epirun
+study/frozen/items.local.jsonl
+proven/*/admit-A-*/obj
+proven/*/admit-A-*/prove.out
+proven/*-edge/obj
+proven/wu-fact-gate-edge/fact_gate_main
+proven/wu-fr-ir-edge/fr_ir_main

@@ -1,0 +1,11 @@
+--  Builds the French income-tax command-line program around the proven units.
+--  Run from this directory:  gprbuild -P edge.gpr
+project Edge is
+   for Source_Dirs use (".", "../wu-fr-ir-compose/admit-A-20261114", "../wu-fr-ir-compose/admit-A-20261114/deps");
+   for Object_Dir use "obj";
+   for Main use ("fr_ir_main.adb");
+   for Exec_Dir use ".";
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatU");
+   end Compiler;
+end Edge;
